@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* base_design.css ver1.01 : Written by syam 2016.08.xx 記 */
+
+/* 組んでいる間わかりやすいようにエリア単位で背景をつけておく */
+#MAIN_FIELD{background:#ddd;}
+
+/* 背景設定 */
+body{
+	background:#f9f8f6;
+}
+main{
+	padding:20px 0 !important;
+}
+#MAIN_FIELD{
+	margin-bottom:10px;
+}
+a{
+	color:#524b3b;
+	text-decoration: none;
+}
+a:hover{
+	color:#776d56;
+}
+
+/* 初期化し損ねている余計な余白を解除 */
+form,h1,h2,h3,h4,dl,dt,dd,ul,li{
+	margin:0; padding:0;
+}
+
+/* OpenSans Font 利用CLASSを定義 */
+header li,#PAGE_TOP,footer small,.sans{
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+/* Footer周りの設定 */
+footer small{
+	margin-bottom:20px;
+	text-align: center;
+	color:#b8b4ac;
+}
+#PAGE_TOP{
+	font-weight:bold;
+	padding:20px 0;
+}
+#PAGE_TOP *{
+	font-size:1.4rem;
+}
+#PAGE_TOP i{
+	margin-right:10px;
+}
+footer ul{
+	margin:0 auto 20px;
+	text-align: center;
+	padding-top:20px;
+	border-top:1px solid #e2ddd4;
+}
+footer li{
+	display:inline-block;
+	/display:inline;
+	/zoom:1;
+	margin:0 5px;
+	padding:0 10px;
+	font-size:1.2rem;
+	background:url(../image/common/dot.gif) no-repeat 0 9px;
+}
+
+/* SUB BOXに関する設定 */
+.sub_box,#SEARCH_ENGINE{
+	margin-bottom:5px;
+	background:#fff;
+}
+
+/* 検索エンジン部分 */
+#SEARCH_ENGINE{
+	padding:15px;
+}
+input[type="search"]{
+	margin:auto;
+	padding:3px 15% 3px 3%;
+	width:82%;
+	height:24px;
+	border:none;
+	background:#eee;
+	font-size:1.1rem;
+	position:relative; /* 入力部分の上に検索ボタンを置くためのおまじない */
+	z-index:0; /* 入力部分の上に検索ボタンを置くためのおまじない：重ね順を定義 */
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	border:none;
+}
+input[type="image"]{
+	float:right;
+	margin:-24px 5px 0 0;
+	position:relative; /* 入力部分の上に検索ボタンを置くためのおまじない */
+	z-index:100; /* 入力部分の上に検索ボタンを置くためのおまじない：重ね順を定義 */
+	height:18px;
+}
